@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --heading: 30px;
+    --subheading: 24px;
+    --smallheadding: 18px;
+    --body-font: 14px;
+    --text-color: #555555;
+    --orange: #EC7323;
+}
+
+body,
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+p,
+a {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none !important;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.5;
+}
+
+.text-color {
+    color: #555555;
+}
+
+.orange {
+    color: #EC7323;
+}
+
+.border-none {
+    border: none;
+}
+
+.box {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 25%);
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.fs-13 {
+    font-size: 13px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/*=======Navbar=======*/
+
+.top-nav {
+    background-color: #fff;
+}
+
+.top-nav .nav-item .nav-link {
+    color: #000;
+}
+
+
+/*=========Banner Section=======*/
+
+.banner-background {
+    /* height: 100vh; */
+    background: rgb(218, 237, 245);
+    background: linear-gradient(180deg, rgba(218, 237, 245, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.banner-img {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#slider {
+    width: 100%;
+    max-height: max-content;
+}
+
+#slider p span {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.slider-static {
+    margin-bottom: 0;
+}
+
+#slider p span.text-in {
+    display: flex;
+    align-items: center;
+    animation: fadeIn 5s ease;
+}
+
+#slider .quote-phrase span {
+    font-size: 30px;
+    line-height: 1.2;
+    height: 120px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gradient-btn {
+    border: none;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+    border-radius: 25px;
+    background: rgb(0, 125, 158);
+    background: linear-gradient(270deg, rgba(0, 125, 158, 1) 50%, rgba(83, 202, 252, 1) 100%);
+}
+
+
+/*==========gray band=======*/
+
+.gray-band {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+}
+
+.gray-band li a {
+    color: #555555;
+    font-weight: 600;
+}
+
+.gray-band li a:hover {
+    border-bottom: 3px solid #EC7323;
+}
+
+
+/*========Hospital & Clinic location=========*/
+
+.card-img img {
+    border-top-right-radius: 20px;
+}
+
+.hos-card {
+    position: relative;
+    height: 365px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-stack {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 15rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgb(0, 125, 158);
+    background: linear-gradient(270deg, rgba(0, 125, 158, 1) 50%, rgba(83, 202, 252, 1) 100%);
+}
+
+
+/*===========Latest at apollo=========*/
+
+.hos-card2 {
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hos-card3 {
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 20px;
+}
+
+.general-info {
+    height: 3px;
+    width: 72px;
+    background-color: #EC7323;
+    color: #EC7323;
+}
+
+.card-stack2 {
+    position: absolute;
+    top: 58%;
+    right: 0%;
+    transform: translate(0%, 20%);
+    width: ;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgb(0, 125, 158);
+    background: linear-gradient(270deg, rgba(0, 125, 158, 1) 50%, rgba(83, 202, 252, 1) 100%);
+}
+
+
+/*==========specialists============*/
+
+.specialists {
+    background-color: #DAEDF5;
+}
+
+.hos-card4 {
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.doc-img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.doc-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #007D9E;
+    object-fit: cover;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 37%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: rgb(0, 125, 158);
+    background: linear-gradient(270deg, rgba(0, 125, 158, 1) 50%, rgba(83, 202, 252, 1) 100%);
+}
+
+.arrow-right img {
+    width: 15px;
+}
+
+
+/*========Medical department=======*/
+
+.department {
+    background-color: #f7f7f7;
+}
+
+.department .hos-card2 {
+    background-color: #fff;
+}
+
+.bk-white {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 200px;
+}
+
+
+/*============misssion=========*/
+
+.mission {
+    background: rgb(218, 237, 245);
+    background: linear-gradient(180deg, rgba(218, 237, 245, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.mission-box {
+    height: 350px;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(0, 125, 158);
+    background: linear-gradient(270deg, rgba(0, 125, 158, 1) 50%, rgba(83, 202, 252, 1) 100%);
+}
+
+
+/*==============patient speaks===========*/
+
+.patients {
+    background-color: #f7f7f7;
+}
+
+.photo-card {
+    width: 100px;
+    height: 100px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    border: 3px solid #007D9E;
+    object-fit: cover;
+}
+
+.patient-card {
+    height: 380px;
+    border-radius: 20px;
+}
+
+
+/*=============Diabetes========*/
+
+.diabetes {
+    position: relative;
+}
+
+.diabetes-stack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.diabetes-stack .gradient-btn {
+    width: max-content;
+}
+
+
+/*================FAQ Section============*/
+
+.accordion,
+.card-header {
+    background-color: #fff;
+    border: none;
+}
+
+.accordion button {
+    border: none;
+    padding: 0;
+}
+
+.accordion .card-header {
+    padding: 20px 0;
+}
+
+.accordion .card {
+    border: none;
+    border-bottom: 1px solid #d6d3d3 !important;
+}
+
+.accordion button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.accordion button:hover {
+    text-decoration: none;
+}
+
+.col-num {
+    color: #007D9E;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.faq {
+    display: flex;
+    justify-content: center;
+}
+
+.faq .gradient-btn {
+    width: max-content;
+}
+
+
+/*==============footer============*/
+
+footer {
+    background-color: #DAEDF5;
+}
